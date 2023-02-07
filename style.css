@@ -120,8 +120,8 @@ h1 img{
       flex-direction: column;
     }
     img {
-      border-radius: 50%;
-      border: solid 2px white;
+/*       border-radius: 50%;
+      border: solid 2px white; */
     }
   }
 
@@ -135,17 +135,9 @@ h1 img{
     }
 
     img {
-      border-radius: 50%;
+/*       border-radius: 50%;
       border: solid 2px white;
-  
+   */
     }
-  }
-@media only screen and (max-width: 767px) {
-  img {
-    border-radius: 20%;
-    border: 5px solid white;
-    width: 150px;
-    height: 150px;
-  }
-}
+ }
 
