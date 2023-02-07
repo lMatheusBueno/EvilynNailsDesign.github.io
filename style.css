@@ -90,12 +90,6 @@ img:hover {
   margin: 0;
 }
 
-h1 img {
-  width: 175px;
-  height: 175px;
-  display: block;
-  margin: 0 auto;
-}
 
 .neon-btn {
   background-color: #ff00ff;
