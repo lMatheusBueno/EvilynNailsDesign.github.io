@@ -15,7 +15,13 @@ h2, h3, h4, h5, h6 {
   font-size: 1.8rem;
   margin: 0;
 }
-
+div div1 img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}
 h1 {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
