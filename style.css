@@ -32,6 +32,7 @@ body {
     border-radius: 50%;
   }
 
+
   
   .conteudo {
     background-color: #f1eef6;
@@ -49,6 +50,10 @@ body {
 
   div h2{
   color: #7d47b9;
+  }
+   p {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
   
   div img {
@@ -69,9 +74,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 100px;
+    display: grid;    
   }
  .produto-preco{
   font-style:normal;
@@ -97,10 +100,32 @@ h1 img{
     letter-spacing: 2px;
     transition: all 0.3s ease-in-out;
   }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
   
   .neon-btn:hover {
     background-color: #ffffff;
     color: #ff00ff;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    /* css para dispositivos móveis */
+    .produtos .grid {
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .content {
+      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }  
   }
   
