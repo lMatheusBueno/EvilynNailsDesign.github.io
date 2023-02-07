@@ -30,6 +30,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 2px solid white;
   }
 
 
@@ -59,9 +60,7 @@ body {
   div img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-    border: none;
+    transition: all 0.3s ease-in-out; 
     position: relative;
     justify-content: center;
   }
