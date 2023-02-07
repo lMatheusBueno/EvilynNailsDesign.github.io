@@ -110,7 +110,7 @@ img:hover {
 }
 
 
-.banner {
+/* .banner {
   background-color: #7b1fa2;
   color: #fff;
   padding: auto;
@@ -119,7 +119,7 @@ img:hover {
   justify-content: center;
   align-items: center;
   size: auto;
-}
+} */
 
 .grid {
   display: grid;
