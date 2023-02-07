@@ -119,6 +119,10 @@ h1 img{
     .produtos .grid {
       flex-direction: column;
     }
+    img {
+      border-radius: 50%;
+      border: solid 2px white;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -131,4 +135,9 @@ h1 img{
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  
+  @media (max-width:768px) {
+    img {
+      border-radius: 50%;
+      border: solid 2px white;
+    }
+  }
