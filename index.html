@@ -13,10 +13,27 @@
 <body>
 	<header>
 		<div class="banner">
-		
+			<script>
+				const h1 = document.querySelector('h1');
+			let i = 0;
+			
+			const typing = () => {
+			  if (i < h1.innerHTML.length) {
+				h1.innerHTML = h1.innerHTML.substring(0, i + 1) + '_';
+				i++;
+				setTimeout(typing, 100);
+			  } else {
+				h1.innerHTML = h1.innerHTML.substring(0, i);
+			  }
+			};
+			
+			typing();
+			</script>
+			 
+			
 			<h1>
 				<img src="Fotos/323372835_892432595504711_4882281930052627316_n.jpg">
-				<h1>Evilyn Nails Design</header></h1>
+				<h1 id="title">Evilyn Nails Design</h1>
 			</h1>
 
 
@@ -26,7 +43,7 @@
 	<main>
 		<div class="conteudo">
 		<ul class="produtos">
-            <div class="grid container"> 
+            <div class="grid"> 
 			<div>            
 				<h2>Fibra de vidro </h2>
                 <a href="https://api.whatsapp.com/send?phone=+5544998919164&text=Olá gostaria de marcar um alongamento!">
@@ -96,20 +113,31 @@
 				<p class="produto-preco">R$ 150,00</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
-           
+			<div class="cookie-consent">
+				<p>Este site usa cookies para melhorar a sua experiência. <button id="accept-cookie-btn">Aceitar</button></p>
+			  </div>
+			  
             </div>
+			<script>const cookieBtn = document.getElementById("accept-cookie-btn");
+
+				cookieBtn.addEventListener("click", function() {
+				  const cookieConsent = document.querySelector(".cookie-consent");
+				  cookieConsent.style.display = "none";
+				});
+				</script>
 		</div>
 		</ul>
+		
 	</main>
 
 	<footer>
 		<!-- <img src="Fotos/319893081_1209337489981595_6076914928608801935_n.jpg"> -->
-		<p class="copyright">&copy; Matheus Bueno 2022</p>
+		<p class="copyright">&copy; Matheus Bueno 2023</p>
 	</footer>
 </body>
 </html>
     
-</body>
+
 <div>
     <!-- <p class="neon-btn" ><img src="Fotos/whats.jpg" alt=""><a href= "https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5544998919164&e=AT15SblUcLjQVAPd7BMf2syXuGEYBD9lOH_o1XF81pINd0R1zDK1zo8a_rQLfUaGcRX5ZxRcHle8QB4wBrTjX-1IL3cT4N-f2_XOLQ">Fale comigo</a></p> -->
 </div>
