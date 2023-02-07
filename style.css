@@ -97,17 +97,42 @@ img:hover {
   align-items: center;
   padding-right: 60px;
 }
+#title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(70, end);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
 
 .banner {
   background-color: #7b1fa2;
   color: #fff;
-  padding: 20px;
+  padding: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+const h1 = document.querySelector('h1');
+			let i = 0;
+			
+			const typing = () => {
+			  if (i < h1.innerHTML.length) {
+				h1.innerHTML = h1.innerHTML.substring(0, i + 1) + '_';
+				i++;
+				setTimeout(typing, 100);
+			  } else {
+				h1.innerHTML = h1.innerHTML.substring(0, i);
+			  }
+			};
+			
+			typing();
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
