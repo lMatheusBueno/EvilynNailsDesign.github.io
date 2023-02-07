@@ -75,6 +75,10 @@ h1 img {
   height: 175px;
 }
 
+ div h2{
+  color: #7d47b9;
+}
+
 .neon-btn {
   background-color: #ff00ff;
   color: #ffffff;
