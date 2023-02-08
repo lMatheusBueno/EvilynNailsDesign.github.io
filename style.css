@@ -7,11 +7,7 @@ body {
   align-items: center;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2,h3,h4,h5,h6 {
   color: #333;
   font-style: italic;
   font-weight: bold;
@@ -22,7 +18,7 @@ h6 {
 
 div div1 img {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 15px;
   width: 150px;
   height: 150px;
