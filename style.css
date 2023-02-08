@@ -7,7 +7,11 @@ body {
   align-items: center;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
   font-style: italic;
   font-weight: bold;
@@ -15,13 +19,15 @@ h2, h3, h4, h5, h6 {
   font-size: 1.8rem;
   margin: 0;
 }
-div div1 img {
+
+div div1 a img {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
   width: 150px;
   height: 150px;
 }
+
 h1 {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,6 +71,7 @@ img:hover {
   height: 150px;
   filter: brightness(50%);
 }
+
 .cookie-consent {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -103,6 +110,7 @@ img:hover {
   align-items: center;
   padding-right: 60px;
 }
+
 #title {
   display: inline-block;
   overflow: hidden;
@@ -111,8 +119,13 @@ img:hover {
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 
@@ -133,6 +146,7 @@ img:hover {
   grid-gap: 3rem;
   justify-content: center;
 }
+
 .cookie-banner {
   width: 100%;
   background-color: #333;
@@ -174,3 +188,4 @@ img:hover {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
+}
